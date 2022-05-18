@@ -36,8 +36,7 @@ def daysInMonth(month,year):
 
 #daysInMonth(1,2021)
 
-#function that determines whether a point is in a rectangle or not with (rx,ry) being the coordinates of
-the leftmost point in the rectangle
+#function that determines whether a point is in a rectangle or not with (rx,ry) being the coordinates of the leftmost point in the rectangle
 
 def pointInRect(x,y,rx,ry,rw,rh):
     if (x >= rx and x <= rx + rw) and (y <= ry and y >= ry - rh):
@@ -45,8 +44,7 @@ def pointInRect(x,y,rx,ry,rw,rh):
     else:
         return False
 
-#function that determines whether a rectangle is inside another rectangle or not with (x1,y1) being the coordinates of
-the rectangle in the other rectangle
+#function that determines whether a rectangle is inside another rectangle or not with (x1,y1) being the coordinates of the rectangle in the other rectangle
 
 def rectInRect(x1,y1,w1,h1,x2,y2,w2,h2):
     if(x1 >= x2 and x1 <= x2+w2) and (y1 <= y2 and y1 >= y2 - h2) and (x1 + w1 <= x2 + w2) and (y1 - h1 >= y2-h2):
